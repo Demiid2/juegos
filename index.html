@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Juegos Gratis Online</title>
+	<meta name="description" content="Juegos gratis 100% online sin descargar">
+	<meta name="keywords" content="juegos, juegos gratis, free, games">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body id="fondo">
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Inicio</a></li>
+				<li><a href="juegos.html">Juegos</a></li>
+				<li><a href="nosotros.html">Info</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<div class="color-random">
+			<input id="color_picker" type="color" onchange="showHex();"> <span id="color_hex_value"></span>
+		</div>
+		<div class="titulos">
+			<h1>Bienvenido a la paginas de juegos gratis mas visitada en tu país.</h1>
+			<p>Aquí encontraras los mejores juegos online y más.<strong>¿Quieres empezar a jugar gratis tu juego faovito? Haz click en juegos en la barra superior.</strong><br></p>
+			<p><mark>Ese cuadrado con colores cambia el color de el título.</mark></p>
+
+		</div>
+	</main>
+	<script type="text/javascript">
+		function showHex(){
+      var hex =  document.querySelector("#color_hex_value"),
+          h1 = document.querySelector("h1");
+    
+      h1.style.color = document.querySelector("#color_picker").value;
+    }
+	</script>
+</body>
+</html>
