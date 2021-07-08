@@ -35,6 +35,7 @@ header ul li a:hover{
 	float: right;
 	height: 300px;
 	width: 500px;
+	background-color: #1B5C95;
 }
 .color-random{
 	display: inline-block;
